@@ -1,0 +1,18 @@
+/*Fonts San Francisco Pro*/
+@font-face { font-family: "SF black"; src: url("/fonts/sfPro/black.ttf") }
+@font-face { font-family: "SF bold"; src: url("/fonts/sfPro/bold.ttf"); }
+@font-face { font-family: "SF semiBold"; src: url("/fonts/sfPro/semiBold.ttf"); }
+@font-face { font-family: "SF medium"; src: url("/fonts/sfPro/medium.ttf"); }
+@font-face { font-family: "SF regular"; src: url("/fonts/sfPro/regular.ttf"); }
+@font-face { font-family: "SF light"; src: url("/fonts/sfPro/light.ttf"); }
+@font-face { font-family: "SF thin"; src: url("/fonts/sfPro/thin.ttf"); }
+@font-face { font-family: "SF ultraThin"; src: url("/fonts/sfPro/ultraThin.ttf"); }
+
+@font-face { font-family: "SF blackItalic"; src: url("/fonts/sfPro/blackItalic.ttf"); }
+@font-face { font-family: "SF boldItalic"; src: url("/fonts/sfPro/boldItalic.ttf"); }
+@font-face { font-family: "SF semiBoldItalic"; src: url("/fonts/sfPro/semiBoldItalic.ttf"); }
+@font-face { font-family: "SF mediumItalic"; src: url("/fonts/sfPro/mediumItalic.ttf"); }
+@font-face { font-family: "SF regularItalic"; src: url("/fonts/sfPro/regularItalic.ttf"); }
+@font-face { font-family: "SF lightItalic"; src: url("/fonts/sfPro/lightItalic.ttf"); }
+@font-face { font-family: "SF thinItalic"; src: url("/fonts/sfPro/thinItalic.ttf"); }
+@font-face { font-family: "SF ultraThinItalic"; src: url("/fonts/sfPro/ultraThinItalic.ttf"); }

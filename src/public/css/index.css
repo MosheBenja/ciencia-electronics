@@ -1,0 +1,17 @@
+/*Efectos para el home en el header*/
+.home span { 
+    color: var(--colorIndicatorBase); 
+}
+
+.home {
+    box-shadow: inset 0 -1px var(--colorIndicatorBase); 
+    background-color: var(--colorIndicatorActive); 
+}
+
+.home img { 
+    filter: invert(49%) sepia(57%) saturate(6463%) hue-rotate(202deg) brightness(92%) contrast(98%); 
+}
+            
+.home:hover { 
+    background-color: var(--colorIndicatorActiveHover) !important; 
+}

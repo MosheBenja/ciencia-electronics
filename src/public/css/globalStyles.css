@@ -1,0 +1,101 @@
+/*Variables globales*/
+:root {
+    --colorHeaderBase: #ffffff;
+    --colorBotonsHeadHover: #5c98e717;
+    --colorIndicatorBase: #1a73e8;
+    --colorIndicatorActive: #1a73e821;
+    --colorIndicatorActiveHover: #1a73e835;
+    --colorBorderBoxes: 1px solid #d1d1d1;
+    --colorBorderBoxesSpan: #d1d1d1;
+    --colorTextEmergency: #e4393f;
+    --boxShadowHeader: 0 2px 6px #7b7b7b36;
+    --boxShadowCercosNav: 3px 3px 8px #83838337;
+    --colorSectionsCercosNavHover: #ffecec;
+    --colorItemsBase: #1f4bab;
+    --colorItemsHover: #1f3576;
+    --colorBaseBlack: #000000;
+    --colorViewBase: #1a1a1a;
+    --colorArrowsViews: #ffffffe6;
+    --colorArrowsViewsHover: #717171e6;
+    --borderViewsList: 2px solid var(--colorIndicatorBase);
+    --colorTextPrice: #119911;
+    --colorTextPriceHover: #268c26;
+    --colorTextList: #4e4e4e;
+    --colorBotonGuide: #2b67c8;
+    --colorBotonGuideHover: #2f5eac;
+}
+
+/*Estilos globales*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: var(--colorBaseBlack);
+    font-family: "SF regular";
+}
+
+/*Content del document*/
+.content {
+    width: 100%;
+    height: calc(100% - 50px);
+    box-sizing: border-box;
+    padding: 30px 15px 15px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+/*ScrollBar del content*/
+.content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background-color: #0000002d;
+    border-radius: 5px;
+}
+
+.content::-webkit-scrollbar-thumb:hover {
+    background-color: #00000041;
+}
+
+/*Page del ducument*/
+.page {
+    margin: auto;
+    max-width: 1200px;
+}
+
+.page article {
+    width: 100%;
+    border: var(--colorBorderBoxes);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 0.5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.page div, iframe {
+    border: var(--colorBorderBoxes);
+    border-radius: 5px;
+    margin: 10px;
+    flex: auto;
+}
+
+.page article:last-child {
+    margin-bottom: 0;
+}
+
+.page h1 {
+    width: 100%;
+    text-align: center;
+    color: var(--colorBaseBlack);
+    font-family: "SF semiBold";
+    font-size: 45px;
+    margin: 30px 0 30px;
+}

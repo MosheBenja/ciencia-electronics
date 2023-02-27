@@ -1,0 +1,100 @@
+/*Efectos para el contacts en el header*/
+.contacts span { 
+    color: var(--colorIndicatorBase); 
+}
+
+.contacts {
+    box-shadow: inset 0 -1px var(--colorIndicatorBase); 
+    background-color: var(--colorIndicatorActive);
+}
+
+.contacts img { 
+    filter: invert(49%) sepia(57%) saturate(6463%) hue-rotate(202deg) brightness(92%) contrast(98%); 
+}
+
+.contacts:hover { 
+    background-color: var(--colorIndicatorActiveHover) !important; 
+}
+
+/*Map para el page*/
+.map {
+    width: 100%;
+    height: 450px;
+}
+
+/*Informacion de atención*/
+.attention {
+    color: var(--colorTextEmergency);
+    margin: 20px 10px 20px;
+    width: 100%;
+}
+
+/*Datos para el page de contacts*/
+.data div {
+    display: flex;
+    align-items: center;
+    border: 0 !important;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+
+.data img {
+    width: 23px;
+    margin-right: 5px;
+}
+
+.data a {
+    margin-left: 10px; 
+    color: var(--colorIndicatorBase);
+}
+
+.data a:hover {
+    opacity: 65%;
+}
+
+/*Redes sociales para el page del contacts*/
+.socials {
+    height: fit-content;
+}
+
+.socials p {
+    margin-top: 15px;
+    text-align: center;
+    color: var(--colorIndicatorBase);
+}
+
+.subSocials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 0 !important;
+    margin: 0 !important;
+}
+
+.socials img {
+    margin: 12px;
+    width: 35px;
+}
+
+.socials img:hover {
+    opacity: 50%;
+}
+
+/*Redimencions del document*/
+@media (max-width: 810px) {
+    .data {
+        width: 100%;
+        margin: 0 0 15px;
+    }
+
+    .socials {
+        width: 100%;
+    }
+}
+
+@media (max-width: 543px) {
+    .data a {
+        width: 100%;
+        margin-top: 5px;
+    }
+}

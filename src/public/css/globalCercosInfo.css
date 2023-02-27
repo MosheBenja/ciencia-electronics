@@ -1,0 +1,323 @@
+/*Efectos para el products en el header*/
+.products span { 
+    color: var(--colorIndicatorBase); 
+}
+.products { 
+    box-shadow: inset 0 -1px var(--colorIndicatorBase); 
+    background-color: var(--colorIndicatorActive); 
+}
+.products img { 
+    filter: invert(49%) sepia(57%) saturate(6463%) hue-rotate(202deg) brightness(92%) contrast(98%); 
+}
+
+.products:hover { 
+    background-color: var(--colorIndicatorActiveHover) !important; 
+}
+
+/*Lista de vistas*/
+.viewsList {
+    flex: none !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.viewsList div {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex: none !important;
+}
+
+.viewsList div.on::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: var(--borderViewsList);
+    border-radius: 5px;
+}
+
+.viewsList div:hover::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: var(--borderViewsList);
+    border-radius: 5px;
+}
+
+/*Vistas*/
+.view {
+    width: 494px;
+    height: 434px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.view div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+    margin: 0;
+    border: 0;
+    background-color: var(--colorHeaderBase);
+    border-radius: 0;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/*Boton Esc*/
+.view span {
+    position: absolute;
+    background-color: var(--colorHeaderBase);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    visibility: hidden;
+    top: 5px;
+    right: 5px;
+    border-radius: 5px;
+}
+
+.view span:hover {
+    background-color: var(--colorSectionsCercosNavHover);
+}
+
+.view span img {
+    width: 30px;
+    filter: invert(11%) sepia(85%) saturate(7462%) hue-rotate(355deg) brightness(85%) contrast(106%);
+}
+
+/*Info de views*/
+.viewInfo {
+    width: 400px;
+    position: relative;
+}
+
+.viewInfo div {
+    border: 0 ;
+}
+
+/*Titulo de views*/
+.titleViews h1 {
+    margin: 13px 0 0;
+}
+
+.titleViews h2 {
+    text-align: center;
+    font-weight: normal;
+    font-family: "SF regular";
+}
+
+/*Price de views*/
+.viewsPrice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 20px 0 !important;
+    border-radius: 0 !important;
+}
+
+.viewsPrice::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: flex;
+    background-color: var(--colorBorderBoxesSpan);
+    margin-top: 10px;
+}
+
+.viewsPrice h2 {
+    font-family: "SF thin";
+    font-size: 30px;
+    color: var(--colorTextPrice);
+}
+
+.viewsPrice p {
+    margin: 10px 8px 0;
+    font-size: 14px;
+    color: var(--colorTextList);
+}
+
+/*Botons del producto*/
+.botons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: auto !important;
+}
+
+.botons a {
+    width: 210px;
+    padding: 12px 30px; 
+    border-radius: 10px;
+    color: var(--colorHeaderBase);
+    margin: 15px 8px -4px;
+    font-family: "SF semiBold";
+    text-align: center;
+    transition: 0.1s;
+}
+
+.botonContacts {
+    background-color: var(--colorTextPrice);
+}
+
+.botonContacts:hover {
+    background-color: var(--colorTextPriceHover);
+}
+
+.botonGuide {
+    background-color: var(--colorBotonGuide);
+}
+
+.botonGuide:hover {
+    background-color: var(--colorBotonGuideHover);
+}
+
+/*List de catacteristics*/
+.listCaracteristics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.listCaracteristics div {
+    flex: none;
+    border: var(--colorBorderBoxes);
+    border-radius: 5px;
+    margin: 10px 8px 0 0;
+}
+
+.listCaracteristics div:last-child {
+    margin: 10px 0 0 8px;
+}
+
+.listCaracteristics li {
+    list-style-type: circle;
+    display: flex;
+    margin: 8px;
+    color: var(--colorTextList);
+}
+
+.listCaracteristics p {
+    margin-left: 10px;
+    color: var(--colorBotonGuide);
+}
+
+.no {
+    margin-left: 10px;
+}
+
+/*Description del producto*/
+.description {
+    padding: 15px;
+}
+
+.description li {
+    margin: 0 0 10px;
+    display: flex;
+}
+
+.description li:last-child {
+    margin: 0 0 0;
+}
+
+.description strong {
+    margin-right: 8px;
+}
+
+.description p {
+    font-size: 18px;
+    color: var(--colorTextList);
+}
+
+
+
+@media (max-width: 1079px) {
+    .viewInfo {
+        order: 0;
+    }
+  
+    .viewsList {
+        width: 100%;
+        flex-wrap: wrap;
+        flex: auto !important;
+        flex-direction: row;
+        order: 1;
+    }
+
+    .view {
+        order: 2;
+    }
+
+    .description {
+        order: 3;
+    }
+
+    .viewsPrice {
+        margin: 30px 40px 0 !important;
+    }
+
+    .listCaracteristics div {
+        display: flex;
+        justify-content: center;
+        width: 268px;
+    }
+}
+
+@media (max-width: 646px) {
+    .listCaracteristics div {
+        flex: auto;
+        margin: 10px 0 0 0;
+        width: 100%;
+        border-bottom: 0;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .listCaracteristics div:last-child {
+        width: 100%;
+        margin: -8px 0 0;
+        border-top: 0;
+        border-bottom: var(--colorBorderBoxes);
+        border-radius: 0 0 5px 5px;
+    }
+
+    .listCaracteristics ul {
+        width: 185px;
+    }
+}
+
+@media (max-width: 360px) {
+    .botons {
+        width: 220px;
+    }
+}
+
+@media (max-width: 334px) {
+    .viewsList div {
+        margin: 8px;
+    }
+}
+
+@media (max-height: 415px) {
+    .view {
+        height: 300px;
+    }
+}

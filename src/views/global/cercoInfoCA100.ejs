@@ -1,0 +1,139 @@
+<!--Más del head para el document-->
+<%- include("../partials/head.ejs") %>
+
+<link rel="stylesheet" href="/css/globalCercosInfo.css" />
+<!------------------------------------------------------------------------------------------------->
+<!--Header y Nav del document-->
+<%- include("../partials/headerNav.ejs") %>
+
+<div class="content">
+    <div class="page">
+        <article>
+            <div class="viewsList">
+                <span class="listIndicator"></span>
+                <div class="views1 on">
+                    <img src="<%= imgCercos.panelBateria.ca90._1 %>" alt="">
+                </div>
+                <div class="views2">
+                    <img src="<%= imgCercos.panelBateria.ca90._2 %>" alt="">
+                </div>
+                <div class="views3">
+                    <img src="<%= imgCercos.panelBateria.ca90._3 %>" alt="">
+                </div>
+                <div class="views4">
+                    <img src="<%= imgCercos.panelBateria.ca90._4 %>" alt="">
+                </div>
+            </div>
+            <!------------------------------------------------------------------------------------------------->
+            <div class="view">
+                <span class="esc">
+                    <img src="icons/iconEsc.svg" alt=""/>
+                </span>
+                <div class="view1">
+                    <img class="img1" src="<%= imgCercos.panelBateria.ca90._1 %>" alt=""/>
+                </div>
+                <div class="view2">
+                    <img class="img2" src="<%= imgCercos.panelBateria.ca90._2 %>" alt=""/>
+                </div>
+                <div class="view3" id="viewsAll">
+                    <img class="img3" src="<%= imgCercos.panelBateria.ca90._3 %>" alt=""/>
+                </div>
+                <div class="view4" id="viewsAll">
+                    <img class="img4" src="<%= imgCercos.panelBateria.ca90._4 %>" alt=""/>
+                </div>
+            </div>
+            <!------------------------------------------------------------------------------------------------->
+            <div class="viewInfo">
+                <div class="titleViews">
+                    <h1>CA 100</h1>
+                    <h2>Cerco electronico</h2>
+                </div>
+                <div class="viewsPrice">
+                    <h2>S/ 500</h2>
+                    <p>2 años de garantia</p>
+                </div>
+                <div class="botons">
+                    <a href="/contacts" class="botonContacts">CONTÁCTANOS</a>
+                    <a href="/guide" class="botonGuide">INSTALACIÓN DEL EUIPO</a>
+                </div>
+                <div class="listCaracteristics">
+                    <div>
+                        <ul>
+                            <li>
+                                Voltaje:
+                                <p>12V</p>
+                            </li>
+                            <li>
+                                Amperaje:
+                                <p>100mA</p>
+                            </li>
+                            <li>
+                                Capacidad:
+                                <p>200m2</p>
+                            </li>
+                            <li>
+                                Panel incluido:<strong class="no">No</strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                Bateria Incluida:<strong class="no">No</strong>
+                            </li>
+                            <li>
+                                Soporte para:
+                                <p>Estaca</p>
+                            </li>
+                            <li>
+                                Anchura:
+                                <p>17cm</p>
+                            </li>
+                            <li>
+                                Altura:
+                                <p>25cm</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!------------------------------------------------------------------------------------------------->
+            <div class="description">
+                <ul>
+                    <li>
+                        <strong>-</strong>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Esse ex, libero accusantium necessitatibus
+                            rerum repellat nulla quibusdam blanditiis, veritatis
+                            totam aperiam magni delectus numquam eligendi iusto
+                            soluta, adipisci enim officia.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>-</strong>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Cupiditate in voluptatibus molestias vero
+                            architecto similique consequatur quae corrupti
+                            laboriosam minima vel accusantium ducimus omnis
+                            doloremque, nulla quas alias laborum quidem.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>-</strong>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Odit, laboriosam dolorem fugit dignissimos eos
+                            a repellendus cum accusantium ullam voluptatibus
+                            quas vitae et, obcaecati molestias ducimus delectus
+                            nisi. Aspernatur, fuga?
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </div>
+</div>
+
+<script src="/javascript/cercosListToggles.js"></script>

@@ -1,0 +1,78 @@
+<!--Comienzo del head-->
+<%- include("partials/head.ejs") %>
+
+<!--Efectos para el contacts en el header-->
+<link rel="stylesheet" href="/css/contacts.css" />
+<!--Title del document-->
+<title>Contactos</title>
+<!------------------------------------------------------------------------------------------------->
+<!--Header y Nav del document-->
+<%- include("partials/headerNav.ejs") %>
+
+<!--Content para los objetos del document-->
+<div class="content">
+    <div class="page">
+        <article>
+            <h1>CAJAMARCA PROVINCIA</h1>
+            <iframe
+                class="map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d494.84563601753854!2d-78.51615181699347!3d-7.153137261895816!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b25af9ced297b7%3A0x28b25b5d1931c3e7!2sJr.%20Jos%C3%A9%20Sabogal%20275%2C%20Cajamarca%2006001!5e0!3m2!1ses!2spe!4v1675803587331!5m2!1ses!2spe"
+            ></iframe>
+            <span class="attention"
+                >Atención al cliente de Lunes A Viernes 8:00am - 6:00pm</span
+            >
+
+            <div class="data">
+                <div class="Company">
+                    <img src="/icons/iconCompany.svg" alt="Company" />
+                    <p>Compañía:</p>
+                    <a href="/" target="_blank">Ciencia Electronics</a>
+                </div>
+                <div class="addres">
+                    <img src="/icons/iconAddres.svg" alt="Addres" />
+                    Dirección:
+                    <a
+                        href="https://goo.gl/maps/pLURBxdQJbfpsru26"
+                        target="_blank"
+                        >Jr. José Sabogal 275 Cajamarca Provincia</a
+                    >
+                </div>
+                <div class="mail">
+                    <img src="/icons/iconMail.svg" alt="" Mail />
+                    Correo:
+                    <a href="" target="_blank">@hotmail.com</a>
+                </div>
+                <div class="telephone">
+                    <img src="/icons/iconTelephone.svg" alt="Telephone" />
+                    Teléfono:
+                    <a href="tel:976821822" target="_blank">+51 976821822</a>
+                </div>
+            </div>
+
+            <div class="socials">
+                <p>Encuentranos</p>
+                <div class="subSocials">
+                    <a href="" target="_blank" class="facebook">
+                        <img src="/icons/iconFacebook.svg" alt="Facebook" />
+                    </a>
+                    <a
+                        href="https://wa.me/+51976821822"
+                        target="_blank"
+                        class="whatsapp"
+                    >
+                        <img src="/icons/iconWhatsapp.svg" alt="whatsapp" />
+                    </a>
+                    <a href="" target="_blank" class="gmail">
+                        <img src="/icons/iconGmail.svg" alt="Gmail" />
+                    </a>
+                    <a href="" target="_blank" class="hotmail">
+                        <img src="/icons/iconHotmail.svg" alt="hotmail" />
+                    </a>
+                </div>
+            </div>
+        </article>
+    </div>
+</div>
+
+<!--Cierro del body-->
+<%- include("partials/body.ejs") %>

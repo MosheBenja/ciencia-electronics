@@ -1,0 +1,115 @@
+/*Efectos para el products en el header*/
+.products span { 
+    color: var(--colorIndicatorBase); 
+}
+.products { 
+    box-shadow: inset 0 -1px var(--colorIndicatorBase); 
+    background-color: var(--colorIndicatorActive); 
+}
+.products img { 
+    filter: invert(49%) sepia(57%) saturate(6463%) hue-rotate(202deg) brightness(92%) contrast(98%); 
+}
+
+.products:hover { 
+    background-color: var(--colorIndicatorActiveHover) !important; 
+}
+
+/*Cercos Nav de products*/
+.cercosNav {
+    box-shadow: var(--boxShadowCercosNav);
+}
+
+.cercosNav a{
+    height: fit-content !important;
+    border-radius: 5px !important;
+    border: var(--colorBorderBoxes);
+    box-shadow: 0 0 0 !important;
+}
+
+.cercosNav a:hover {
+    background-color: var(--colorSectionsCercosNavHover);
+}
+
+.cercosNav span {
+    color: var(--colorTextEmergency);
+    text-align: center;
+    margin: 15px;
+}
+
+/*Etiquetas A y su comportamiento*/
+.page a {
+    height: 450px;
+    width: 350px;
+    border-radius: 25px 25px 10px 10px;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: 0.15s;
+}
+
+.section a:hover {
+    transform: scale(1.02);
+}
+
+/*Todas las info*/
+.imgInfo, .infoPrice, .info {
+    width: 100%;
+    margin: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorHeaderBase);
+    background-color: var(--colorItemsBase);
+}
+
+.section a:hover .info, .infoPrice{
+    background-color: var(--colorItemsHover);
+}
+
+/*Info del document*/
+.info {
+    height: 150px;
+    box-sizing: border-box;
+    padding: 0 20px 0;
+    position: relative;
+    transition: 0.15s;
+}
+
+.info h3 {
+    width: 70%;
+    height: 33px;
+    text-align: center;
+    border-bottom: 1px solid var(--colorHeaderBase);
+    margin: 10px;
+}
+
+/*Info de imagen para el document*/
+.imgInfo {
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*Info de precio para el document*/
+.infoPrice {
+    width: 50% !important;
+    height: 40px;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 20px !important;
+    transition: 0.3s;
+    background-color: var(--colorItemsBase);
+}
+
+.section a:hover .infoPrice {
+    width: 70% !important;
+}
