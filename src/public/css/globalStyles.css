@@ -1,29 +1,20 @@
 /*Variables globales*/
 :root {
-    --colorHeaderBase: #ffffff;
-    --colorBotonsHeadHover: #5c98e717;
-    --colorIndicatorBase: #1a73e8;
-    --colorIndicatorActive: #1a73e821;
-    --colorIndicatorActiveHover: #1a73e835;
-    --colorBorderBoxes: 1px solid #d1d1d1;
-    --colorBorderBoxesSpan: #d1d1d1;
-    --colorTextEmergency: #e4393f;
-    --boxShadowHeader: 0 2px 6px #7b7b7b36;
-    --boxShadowCercosNav: 3px 3px 8px #83838337;
-    --colorSectionsCercosNavHover: #ffecec;
-    --colorItemsBase: #1f4bab;
-    --colorItemsHover: #1f3576;
-    --colorBaseBlack: #000000;
-    --colorViewBase: #1a1a1a;
-    --colorArrowsViews: #ffffffe6;
-    --colorArrowsViewsHover: #717171e6;
-    --borderViewsList: 2px solid var(--colorIndicatorBase);
-    --colorTextPrice: #119911;
-    --colorTextPriceHover: #268c26;
-    --colorTextList: #4e4e4e;
-    --colorBotonGuide: #2b67c8;
-    --colorBotonGuideHover: #2f5eac;
-}
+    /*Colors*/
+    --colorHeader: #ffffff;
+    --colorTextHeader: #595959;
+    --colorTextActiveHeader: #e9e9e9;
+    --colorBorderBoxsesHeader: #dddddd;
+    --colorBoxActiveHeader: #3580f7;
+    --colorBoxActiveHeaderHover: #2277ff;
+    --colorBoxShadowActiveHeaderHover: #3580f7;
+    --colorIconsActiveHeader: invert(49%) sepia(57%) saturate(6463%) hue-rotate(202deg) brightness(92%) contrast(98%);
+
+    /*Borders*/
+
+    /*BoxShadows*/
+    --boxShadowHeader: 0 5px 15px #00000017;
+} 
 
 /*Estilos globales*/
 * {
@@ -42,11 +33,13 @@ body {
 /*Content del document*/
 .content {
     width: 100%;
-    height: calc(100% - 50px);
+    height: calc(100% - 55px);
     box-sizing: border-box;
     padding: 30px 15px 15px;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    position: absolute;
+    bottom: 0;
 }
 
 /*ScrollBar del content*/

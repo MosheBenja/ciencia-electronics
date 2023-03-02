@@ -1,17 +1,15 @@
 /*Efectos para el guide en el header*/
-.guide span { 
-    color: var(--colorIndicatorBase); 
+.guide {
+    color: var(--colorTextActiveHeader)!important;
+    background-color: var(--colorBoxActiveHeader); 
+    box-shadow: 0 0 7px 0 var(--colorBoxActiveHeader), inset 0 0 0 !important;
 }
 
-.guide {
-    box-shadow: inset 0 -1px var(--colorIndicatorBase); 
-    background-color: var(--colorIndicatorActive);
+.guide:hover {
+    background-color: var(--colorBoxActiveHeaderHover); 
+    box-shadow: 0 0 5px 0 var(--colorBoxShadowActiveHeaderHover) !important;
 }
 
 .guide img { 
-    filter: invert(49%) sepia(57%) saturate(6463%) hue-rotate(202deg) brightness(92%) contrast(98%); 
-}
-
-.guide:hover { 
-    background-color: var(--colorIndicatorActiveHover) !important; 
+    filter: var(--colorIconsActiveHeader); 
 }
