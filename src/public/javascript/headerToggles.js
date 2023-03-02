@@ -1,10 +1,17 @@
 /*Llamado a los objetos pra el toglle*/
-const menuVar = document.querySelector(".menuNav");
-const iconMenu = document.querySelector(".iconMenu");
-const nav = document.querySelector(".nav");
+const menuNav = document.querySelector(".menuNav");
+const menuIcon = document.querySelector(".menuIcon");
+const masc = document.querySelector(".masc");
+const iconMenu = document.getElementById("iconMenu");
 
-menuVar.addEventListener("click", () => {
-    menuVar.classList.toggle("on");
-    iconMenu.classList.toggle("on");
-    nav.classList.toggle("on");
+menuIcon.addEventListener("click", () => {
+    menuNav.classList.toggle("on");
+    menuIcon.classList.toggle("on");
+    masc.classList.toggle("on");
 });
+
+masc.addEventListener("click", () => {
+    menuNav.classList.remove("on");
+    menuIcon.classList.remove("on");
+    masc.classList.remove("on");
+}); 

@@ -4,7 +4,7 @@ import { imgCercos } from "./routersImgs.js"
 /*Rutas principales del document*/
 function principals(app) {
     app.get("/", (req, res) => res.render("index.ejs", { title: "Inicio" }));
-    app.get("/products", (req, res) => res.render("products.ejs", { title: "Productos", imgCercos }));
+    app.get("/cercos", (req, res) => res.render("cercos.ejs", { title: "Cercos", imgCercos }));
     app.get("/contacts", (req, res) => res.render("contacts.ejs", { title: "Contactos" }));
     app.get("/guide", (req, res) => res.render("guide.ejs", { title: "Guía" }));
 };

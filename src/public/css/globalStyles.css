@@ -2,18 +2,16 @@
 :root {
     /*Colors*/
     --colorHeader: #ffffff;
+    --colorBoxShadowHeader: #00000017;
     --colorTextHeader: #595959;
     --colorTextActiveHeader: #e9e9e9;
     --colorBorderBoxsesHeader: #dddddd;
-    --colorBoxActiveHeader: #3580f7;
-    --colorBoxActiveHeaderHover: #2277ff;
-    --colorBoxShadowActiveHeaderHover: #3580f7;
-    --colorIconsActiveHeader: invert(49%) sepia(57%) saturate(6463%) hue-rotate(202deg) brightness(92%) contrast(98%);
+    --colorBoxActiveHeader: #4183ed;
+    --colorBoxActiveHeaderHover: #226adf;
+    --colorIconsActiveHeader: invert(100%) sepia(0%) saturate(7500%) hue-rotate(24deg) brightness(104%) contrast(102%);
 
     /*Borders*/
 
-    /*BoxShadows*/
-    --boxShadowHeader: 0 5px 15px #00000017;
 } 
 
 /*Estilos globales*/

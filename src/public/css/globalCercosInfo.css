@@ -2,12 +2,11 @@
 .products {
     color: var(--colorTextActiveHeader)!important;
     background-color: var(--colorBoxActiveHeader); 
-    box-shadow: 0 0 7px 0 var(--colorBoxActiveHeader), inset 0 0 0 !important;
+    box-shadow: 0 0 0 !important;
 }
 
 .products:hover {
     background-color: var(--colorBoxActiveHeaderHover); 
-    box-shadow: 0 0 5px 0 var(--colorBoxShadowActiveHeaderHover) !important;
 }
 
 .products img { 

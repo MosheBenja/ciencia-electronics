@@ -2,12 +2,11 @@
 .home {
     color: var(--colorTextActiveHeader)!important;
     background-color: var(--colorBoxActiveHeader); 
-    box-shadow: 0 0 7px 0 var(--colorBoxActiveHeader);
+    box-shadow: 0 0 0 !important;
 }
 
 .home:hover {
     background-color: var(--colorBoxActiveHeaderHover); 
-    box-shadow: 0 0 4px 0 var(--colorBoxShadowActiveHeaderHover);
 }
 
 .home img { 
