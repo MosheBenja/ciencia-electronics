@@ -2,10 +2,10 @@
 :root {
     /*Colors*/
     --colorHeader: #ffffff;
-    --colorBoxShadowHeader: #00000017;
+    --colorBoxShadowHeader: #00000010;
     --colorTextHeader: #595959;
     --colorTextActiveHeader: #e9e9e9;
-    --colorBorderBoxsesHeader: #dddddd;
+    --colorBorderBoxsesHeader: #d1d1d1;
     --colorBoxActiveHeader: #4183ed;
     --colorBoxActiveHeaderHover: #226adf;
     --colorIconsActiveHeader: invert(100%) sepia(0%) saturate(7500%) hue-rotate(24deg) brightness(104%) contrast(102%);
@@ -62,7 +62,6 @@ body {
 
 .page article {
     width: 100%;
-    border: var(--colorBorderBoxes);
     border-radius: 5px;
     box-sizing: border-box;
     padding: 0.5%;
@@ -72,7 +71,6 @@ body {
 }
 
 .page div, iframe {
-    border: var(--colorBorderBoxes);
     border-radius: 5px;
     margin: 10px;
     flex: auto;

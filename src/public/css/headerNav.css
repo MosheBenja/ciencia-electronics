@@ -1,7 +1,7 @@
 /*Estilos del header*/
 header {
     width: 100vw;
-    height: 55px;
+    height: 50px;
     background-color: var(--colorHeader);
     box-shadow: 0 5px 15px var(--colorBoxShadowHeader);
     position: absolute;
@@ -13,18 +13,17 @@ header {
 }
 
 /*Estilos del menu*/
-.menuNav, .menuIcon {
+.menuNav, .menuIcon, nav, .botonList, .cercosNav, .navImg {
     display: flex;
 }
 
 .menuIcon {
     display: none;
     border-radius: 8px;
-    box-shadow: 0 0 0 1px var(--colorBorderBoxsesHeader);
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     position: absolute;
-    right: 5px;  
+    right: 8px;  
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -50,6 +49,10 @@ header {
 }
 
 /*Estilos del nav*/
+.nav {
+    justify-content: center;
+}
+
 .nav, a {
     display: flex;
     align-items: center;
@@ -67,7 +70,7 @@ header {
 }
 
 .nav a:hover {
-    color: black;
+    color: #000000;
     box-shadow: inset 0 0 0 1px var(--colorBorderBoxsesHeader);
 }
 
@@ -76,18 +79,121 @@ header {
     font-size: 15px;
 }
 
+/*Estilos para cercos boton*/
+.cercos {
+    border-radius: 12px 0 0 12px !important;
+    padding: 0 9px 0 18px !important;
+    margin: 0 2px 0 3px !important;
+}
+
+.botonList {
+    width: 22px;
+    height: 40px;   
+    border-radius: 0 12px 12px 0;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px 0 0;
+    transition: 0.08s;
+}
+
+.botonList.on {
+    box-shadow: inset 0 0 0 1px var(--colorBorderBoxsesHeader);
+}
+
+.botonList:hover {
+    box-shadow: inset 0 0 0 1px var(--colorBorderBoxsesHeader);
+}
+
+.cercos:hover ~ .botonList {
+    box-shadow: inset 0 0 0 1px var(--colorBorderBoxsesHeader);
+}
+
+.botonList:hover img {
+    filter: none;
+}
+
+.botonList img {
+    width: 28px;
+    filter: invert(36%) sepia(0%) saturate(731%) hue-rotate(208deg) brightness(88%) contrast(82%);
+}
+
+/*Navegacion de los ipos de cercos*/
+.cercosNav {
+    width: 800px;
+    height: 150px;
+    background-color: var(--colorHeader);
+    position: absolute;
+    top: 45px;
+    box-shadow: 0 12px 24px -6px #60606026;
+    border-radius: 0 0 20px 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.cercosNav.on {
+    display: flex;
+}
+
+.cercosNav a {
+    margin: 0 15px 0 0;
+    height: 100%;
+    flex: auto;
+    box-shadow: inset 0 0 0 1px var(--colorBorderBoxsesHeader);
+    text-align: center;
+    padding: 0;
+    flex-wrap: wrap;
+    transition: 0.08s;
+    justify-content: center;
+}
+
+.cercosNav a:hover {
+    box-shadow: 0 8px 20px -6px #60606026, inset 0 0 0 1px var(--colorBorderBoxsesHeader);
+}
+
+.cercosNav a:hover .navImg img {
+    opacity: 100%;
+}
+
+.cercosNav a:last-child {
+    margin: 0;
+}
+
+.cercosNav span {
+    width: 100%;
+}
+
+.navImg {
+    align-items: center;
+}
+
+.navImg h1 {
+    font-size: 28px;
+    margin: 0 8px 0 8px;
+}
+
+.navImg img {
+    opacity: 80%;
+    width: 45px;
+}
 
 
-@media (max-width: 1024px) {
+
+
+
+
+@media (max-width: 1020px) {
     .menuNav {
-        display: none;
+        display: flex;
+        width: 100%;
+        height: calc(100vh - 50px);
+        margin: 100vh 0 0 !important;
     }
 
     .menuNav.on {
         display: flex;
-        width: 100%;
-        height: calc(100vh - 55px);
-        margin: 100vh 0 0 !important;
     }
 
     .masc {
@@ -95,28 +201,27 @@ header {
     }
 
     .masc.on {
-        width: 100%;
+        flex: auto;
         height: 100%;
         background-color: #0000007b;
         display: flex;
     }
     
     .nav {
-        position: absolute;
         width: 240px;
-        height: calc(100vh - 55px);
         background-color: var(--colorHeader);
         display: block;
         box-shadow: 5px 13px 15px var(--colorBoxShadowHeader);
+        box-sizing: border-box;
+        padding: 0 10px 0 10px;
     }
 
     .nav a {
-        margin: 8px 15px;
-        padding: 0 25px;
+        margin: 8px 0 0;
     }
 
     .nav a:first-child {
-        margin: 20px 15px 8px;
+        margin: 20px 0 0;
     }
 
     .nav span {
@@ -125,5 +230,15 @@ header {
 
     .iconsNav, .menuIcon {
         display: flex;
+    }
+
+    .cercos {
+        margin: 8px 24px 0  0!important;
+    }
+
+    .botonList {
+        position: absolute;
+        top: 68px;
+        right: 7px;
     }
 }
