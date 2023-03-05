@@ -186,7 +186,7 @@ header {
 
 @media (max-width: 1020px) {
     .menuNav {
-        display: flex;
+        display: none;
         width: 100%;
         height: calc(100vh - 50px);
         margin: 100vh 0 0 !important;
@@ -194,6 +194,53 @@ header {
 
     .menuNav.on {
         display: flex;
+    }
+
+    .cercosNav {
+        width: 100%;
+        height: fit-content;
+        background-color: var(--colorBoxActiveHeader);
+        position: relative;
+        top: 0;
+        margin: 2px 0 0 0;
+        padding: 5px 15px 15px 15px;
+        border-radius: 0 0 12px 12px;
+        transition: 1s;
+    }
+    
+    .cercosNav a {
+        margin: 10px 0 0 !important;
+        background-color: var(--colorHeader);
+        box-shadow: none;
+        padding: 8px 0 8px;
+    }
+
+    .cercosNav span {
+        font-size: 12px;
+        margin: 5px 0 0 0 !important;
+    }
+
+    .navImg img {
+        width: 30px;
+        opacity: 100%;
+    }
+
+    .navImg h1 {
+        font-size: 18px;
+    }
+
+    .botonList {
+        position: absolute;
+        top: 68px;
+        right: 7px;
+    }
+
+    .botonList.on {
+        border-radius: 0 12px 0 0;
+    }
+
+    .cercos.on{
+        border-radius: 12px 0 0 0 !important;
     }
 
     .masc {
@@ -214,6 +261,7 @@ header {
         box-shadow: 5px 13px 15px var(--colorBoxShadowHeader);
         box-sizing: border-box;
         padding: 0 10px 0 10px;
+        overflow-y: scroll;
     }
 
     .nav a {
@@ -234,11 +282,5 @@ header {
 
     .cercos {
         margin: 8px 24px 0  0!important;
-    }
-
-    .botonList {
-        position: absolute;
-        top: 68px;
-        right: 7px;
     }
 }
