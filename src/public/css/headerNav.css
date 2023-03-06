@@ -1,76 +1,31 @@
-/*Estilos del header*/
-header {
-    width: 100vw;
-    height: 50px;
-    background-color: var(--colorHeader);
-    box-shadow: 0 5px 15px var(--colorBoxShadowHeader);
-    position: absolute;
-    z-index: 100000;
+/*Estilos globales para:*/
+header, .menuIcon, .nav, a, .botonList, .navImg {
     display: flex;
-    align-items: center;
     justify-content: center;
-    box-sizing: border-box;
-}
-
-/*Estilos del menu*/
-.menuNav, .menuIcon, nav, .botonList, .cercosNav, .navImg {
-    display: flex;
-}
-
-.menuIcon {
-    display: none;
-    border-radius: 8px;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 8px;  
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.menuIcon.on {
-    background-color: var(--colorBoxActiveHeader); 
-    box-shadow: 0 0 0;
-}
-
-.menuIcon.on:hover {
-    background-color: var(--colorBoxActiveHeaderHover); 
-}
-
-.menuIcon.on img{
-    filter: var(--colorIconsActiveHeader);
-}
-
-.iconsNav{
-    width: 25px;
-    cursor: pointer;
-    display: none;
-}
-
-/*Estilos del nav*/
-.nav {
-    justify-content: center;
-}
-
-.nav, a {
-    display: flex;
     align-items: center;
     position: relative;
 }
 
+/*Header*/
+header {
+    width: 100vw;
+    height: 50px;
+    box-shadow: 0 5px 15px var(--colorBoxShadowHeader);
+}
+
+/*Nav*/
 .nav a {
     height: 40px;
-    box-sizing: border-box;
     padding: 0 18px;
     margin: 0 3px;
     color: var(--colorTextHeader);   
     transition: 0.08s;
     border-radius: 12px;
+    justify-content: start;
 }
 
 .nav a:hover {
-    color: #000000;
+    color: var(--colorTextNormal);
     box-shadow: inset 0 0 0 1px var(--colorBorderBoxsesHeader);
 }
 
@@ -79,7 +34,7 @@ header {
     font-size: 15px;
 }
 
-/*Estilos para cercos boton*/
+/*botons nav*/
 .cercos {
     border-radius: 12px 0 0 12px !important;
     padding: 0 9px 0 18px !important;
@@ -91,8 +46,6 @@ header {
     height: 40px;   
     border-radius: 0 12px 12px 0;
     cursor: pointer;
-    justify-content: center;
-    align-items: center;
     margin: 0 3px 0 0;
     transition: 0.08s;
 }
@@ -109,16 +62,20 @@ header {
     box-shadow: inset 0 0 0 1px var(--colorBorderBoxsesHeader);
 }
 
-.botonList:hover img {
-    filter: none;
-}
-
 .botonList img {
     width: 28px;
     filter: invert(36%) sepia(0%) saturate(731%) hue-rotate(208deg) brightness(88%) contrast(82%);
 }
 
-/*Navegacion de los ipos de cercos*/
+.botonList:hover img {
+    filter: none;
+}
+
+.botonList.on img {
+    content: url("/icons/arrowUp.svg");
+}
+
+/*Cercos Nav*/
 .cercosNav {
     width: 800px;
     height: 150px;
@@ -127,7 +84,6 @@ header {
     top: 45px;
     box-shadow: 0 12px 24px -6px #60606026;
     border-radius: 0 0 20px 20px;
-    box-sizing: border-box;
     padding: 20px;
     flex-wrap: wrap;
     display: none;
@@ -153,20 +109,12 @@ header {
     box-shadow: 0 8px 20px -6px #60606026, inset 0 0 0 1px var(--colorBorderBoxsesHeader);
 }
 
-.cercosNav a:hover .navImg img {
-    opacity: 100%;
-}
-
 .cercosNav a:last-child {
     margin: 0;
 }
 
 .cercosNav span {
     width: 100%;
-}
-
-.navImg {
-    align-items: center;
 }
 
 .navImg h1 {
@@ -179,81 +127,70 @@ header {
     width: 45px;
 }
 
+.cercosNav a:hover .navImg img {
+    opacity: 100%;
+}
+
+/*Masc*/
 
 
+/*Icons nav*/
+.iconsNav{
+    width: 25px;
+    cursor: pointer;
+    display: none;
+} 
 
+.menuIcon {
+    display: none;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 8px;  
+    cursor: pointer;
+}
 
+.menuIcon.on {
+    background-color: var(--colorBoxActiveHeader); 
+    box-shadow: 0 0 0;
+}
 
+.menuIcon.on:hover {
+    background-color: var(--colorBoxActiveHeaderHover); 
+}
+
+.menuIcon.on img{
+    filter: var(--colorIconsActiveHeader);
+}
+
+/*Medida resposive de 1020px*/
 @media (max-width: 1020px) {
+    /*MenuNav*/
     .menuNav {
         display: none;
         width: 100%;
         height: calc(100vh - 50px);
-        margin: 100vh 0 0 !important;
+        margin: 100vh 0 0;
     }
 
     .menuNav.on {
         display: flex;
     }
 
-    .cercosNav {
-        width: 100%;
-        height: fit-content;
-        background-color: var(--colorBoxActiveHeader);
-        position: relative;
-        top: 0;
-        margin: 2px 0 0 0;
-        padding: 5px 15px 15px 15px;
-        border-radius: 0 0 12px 12px;
-        transition: 1s;
-    }
-    
-    .cercosNav a {
-        margin: 10px 0 0 !important;
-        background-color: var(--colorHeader);
-        box-shadow: none;
-        padding: 8px 0 8px;
-    }
-
-    .cercosNav span {
-        font-size: 12px;
-        margin: 5px 0 0 0 !important;
-    }
-
-    .navImg img {
-        width: 30px;
-        opacity: 100%;
-    }
-
-    .navImg h1 {
-        font-size: 18px;
-    }
-
-    .botonList {
-        position: absolute;
-        top: 68px;
-        right: 7px;
-    }
-
-    .botonList.on {
-        border-radius: 0 12px 0 0;
-    }
-
-    .cercos.on{
-        border-radius: 12px 0 0 0 !important;
-    }
-
+    /*Masc*/
     .masc {
         display: none;
     }
 
     .masc.on {
         flex: auto;
-        height: 100%;
+        height: 100vh;
         background-color: #0000007b;
         display: flex;
     }
-    
+
+    /*Nav*/
     .nav {
         width: 240px;
         background-color: var(--colorHeader);
@@ -262,6 +199,14 @@ header {
         box-sizing: border-box;
         padding: 0 10px 0 10px;
         overflow-y: scroll;
+    }
+
+    .cercos {
+        margin: 8px 24px 0  0!important;
+    }
+
+    .cercos.on{
+        border-radius: 12px 0 0 0 !important;
     }
 
     .nav a {
@@ -280,7 +225,48 @@ header {
         display: flex;
     }
 
-    .cercos {
-        margin: 8px 24px 0  0!important;
+    /*BotonList*/
+    .botonList {
+        position: absolute;
+        top: 68px;
+        right: 7px;
+    }
+
+    .botonList.on {
+        border-radius: 0 12px 0 0;
+    }
+
+    /*CercosNav*/
+    .cercosNav {
+        width: 100%;
+        height: fit-content;
+        background-color: var(--colorBoxActiveHeader);
+        position: relative;
+        top: 0;
+        margin: 2px 0 0 0;
+        padding: 5px 15px 15px 15px;
+        border-radius: 0 0 12px 12px;
+        box-shadow: none;
+    }
+    
+    .cercosNav a {
+        margin: 10px 0 0 !important;
+        background-color: var(--colorHeader);
+        box-shadow: none;
+        padding: 8px 0 8px;
+    }
+
+    .navImg img {
+        width: 30px;
+        opacity: 100%;
+    }
+    
+    .navImg h1 {
+        font-size: 18px;
+    }
+
+    .cercosNav span {
+        font-size: 12px;
+        margin: 5px 0 0 0 !important;
     }
 }

@@ -9,6 +9,8 @@ const cercos = document.querySelector(".cercos");
 const b1 = document.querySelector(".b1");
 const b2 = document.querySelector(".b2");
 const b3 = document.querySelector(".b3");
+const imglist = document.getElementById("imgList");
+const content = document.querySelector(".content");
 
 function menuNavToggles() {
     menuNav.classList.toggle("on");
@@ -23,7 +25,7 @@ function cercosNavToggles() {
 }
 
 menuIcon.addEventListener("click", menuNavToggles);
-masc.addEventListener("click", menuNavToggles); 
+masc.addEventListener("click", cercosNavToggles); 
 botonList.addEventListener("click", cercosNavToggles);
 b1.addEventListener("click", () => {
     cercosNavToggles()

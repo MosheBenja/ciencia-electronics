@@ -12,3 +12,19 @@
 .home img { 
     filter: var(--colorIconsActiveHeader); 
 }
+
+@media (max-width: 1020px) {
+    .botonList.on {
+        border-radius: 12px 12px 0 0;
+        background-color: var(--colorBoxActiveHeader);
+        box-shadow: none;
+    }
+    
+    .botonList.on img {
+        filter: var(--colorIconsActiveHeader);
+    }
+    
+    .cercosNav.on {
+        border-radius: 12px 0 12px 12px;
+    }   
+}
