@@ -13,18 +13,19 @@
     filter: var(--colorIconsActiveHeader); 
 }
 
-@media (max-width: 1020px) {
-    .botonList.on {
-        border-radius: 12px 12px 0 0;
-        background-color: var(--colorBoxActiveHeader);
-        box-shadow: none;
-    }
-    
-    .botonList.on img {
-        filter: var(--colorIconsActiveHeader);
-    }
-    
-    .cercosNav.on {
-        border-radius: 12px 0 12px 12px;
-    }   
+.cercos:hover ~ .botonList {
+    box-shadow: inset 0 0 0;
 }
+
+.botonList.on {
+    background-color: var(--colorBoxActiveHeaderHover); 
+    box-shadow: none;
+}
+
+.botonList.on img {
+    filter: var(--colorIconsActiveHeader);
+}
+
+.cercosNav.on {
+    border-radius: 12px 0 12px 12px;
+}   

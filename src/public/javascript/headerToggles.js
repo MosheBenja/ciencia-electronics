@@ -25,7 +25,7 @@ function cercosNavToggles() {
 }
 
 menuIcon.addEventListener("click", menuNavToggles);
-masc.addEventListener("click", cercosNavToggles); 
+masc.addEventListener("click", menuNavToggles); 
 botonList.addEventListener("click", cercosNavToggles);
 b1.addEventListener("click", () => {
     cercosNavToggles()

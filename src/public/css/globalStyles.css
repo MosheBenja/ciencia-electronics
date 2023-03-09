@@ -22,19 +22,19 @@
 
 body {
     color: var(--colorBaseBlack);
+    display: flex;
+    flex-wrap: wrap;
     font-family: "SF regular";
 }
 
 /*Content del document*/
 .content {
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 50px);
+    margin-top: 50px;
     padding: 30px 15px 15px;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    position: absolute;
-    top: 50px;
-    z-index: -1;
 }
 
 /*ScrollBar del content*/
@@ -54,7 +54,7 @@ body {
 /*Page del ducument*/
 .page {
     margin: auto;
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 .page article {

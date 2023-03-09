@@ -8,9 +8,11 @@ header, .menuIcon, .nav, a, .botonList, .navImg {
 
 /*Header*/
 header {
-    width: 100vw;
+    width: 100%;
     height: 50px;
+    z-index: 10000;
     box-shadow: 0 5px 15px var(--colorBoxShadowHeader);
+    position: fixed;
 }
 
 /*Nav*/
@@ -41,6 +43,10 @@ header {
     margin: 0 2px 0 3px !important;
 }
 
+.cercos.on{
+    border-radius: 12px 0 0 0 !important;
+}
+
 .botonList {
     width: 22px;
     height: 40px;   
@@ -51,6 +57,8 @@ header {
 }
 
 .botonList.on {
+    border-radius: 0 12px 0 0;
+    background-color: var(--colorBoxActiveHeader);
     box-shadow: inset 0 0 0 1px var(--colorBorderBoxsesHeader);
 }
 
@@ -77,14 +85,14 @@ header {
 
 /*Cercos Nav*/
 .cercosNav {
-    width: 800px;
-    height: 150px;
-    background-color: var(--colorHeader);
+    width: 275px;
+    background-color: var(--colorBoxActiveHeader);
     position: absolute;
     top: 45px;
+    right: 210px;
     box-shadow: 0 12px 24px -6px #60606026;
-    border-radius: 0 0 20px 20px;
-    padding: 20px;
+    border-radius: 12px 0 12px 12px;
+    padding: 15px;
     flex-wrap: wrap;
     display: none;
 }
@@ -94,45 +102,29 @@ header {
 }
 
 .cercosNav a {
-    margin: 0 15px 0 0;
-    height: 100%;
-    flex: auto;
-    box-shadow: inset 0 0 0 1px var(--colorBorderBoxsesHeader);
-    text-align: center;
+    width: 100%;
+    height: 60px;
+    background-color: var(--colorHeader);
+    margin: 15px 0 0 0;
+    box-shadow: none !important;
     padding: 0;
     flex-wrap: wrap;
     transition: 0.08s;
-    justify-content: center;
 }
 
-.cercosNav a:hover {
-    box-shadow: 0 8px 20px -6px #60606026, inset 0 0 0 1px var(--colorBorderBoxsesHeader);
-}
-
-.cercosNav a:last-child {
+.cercosNav a:first-child {
     margin: 0;
 }
 
-.cercosNav span {
-    width: 100%;
+.cercosNav img {
+    width: 35px;
+    margin: 0 15px;
+    transition: 0.15s;
 }
 
-.navImg h1 {
-    font-size: 28px;
-    margin: 0 8px 0 8px;
+.cercosNav a:hover img {
+    transform: scale(1.25);
 }
-
-.navImg img {
-    opacity: 80%;
-    width: 45px;
-}
-
-.cercosNav a:hover .navImg img {
-    opacity: 100%;
-}
-
-/*Masc*/
-
 
 /*Icons nav*/
 .iconsNav{
@@ -181,12 +173,12 @@ header {
     /*Masc*/
     .masc {
         display: none;
+        flex: auto;
+        height: 100%;
+        background-color: #0000007b;
     }
 
     .masc.on {
-        flex: auto;
-        height: 100vh;
-        background-color: #0000007b;
         display: flex;
     }
 
@@ -203,10 +195,6 @@ header {
 
     .cercos {
         margin: 8px 24px 0  0!important;
-    }
-
-    .cercos.on{
-        border-radius: 12px 0 0 0 !important;
     }
 
     .nav a {
@@ -232,41 +220,33 @@ header {
         right: 7px;
     }
 
-    .botonList.on {
-        border-radius: 0 12px 0 0;
-    }
-
     /*CercosNav*/
     .cercosNav {
         width: 100%;
-        height: fit-content;
-        background-color: var(--colorBoxActiveHeader);
         position: relative;
         top: 0;
+        right: 0;
         margin: 2px 0 0 0;
-        padding: 5px 15px 15px 15px;
         border-radius: 0 0 12px 12px;
         box-shadow: none;
+        padding: 13px;
     }
     
     .cercosNav a {
-        margin: 10px 0 0 !important;
-        background-color: var(--colorHeader);
-        box-shadow: none;
-        padding: 8px 0 8px;
+        margin: 13px 0 0 0;
     }
 
-    .navImg img {
-        width: 30px;
-        opacity: 100%;
+    .cercosNav a:first-child {
+        margin: 0;
     }
-    
-    .navImg h1 {
-        font-size: 18px;
+
+    .cercosNav img {
+        width: 30px;
+        margin: 0 10px !important;
     }
 
     .cercosNav span {
         font-size: 12px;
-        margin: 5px 0 0 0 !important;
+        margin: 0 !important;
     }
 }
