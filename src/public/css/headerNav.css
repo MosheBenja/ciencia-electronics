@@ -10,9 +10,12 @@ header, .menuIcon, .nav, a, .botonList, .navImg {
 header {
     width: 100%;
     height: 50px;
+    background-color: var(--colorHeader);
     z-index: 10000;
     box-shadow: 0 5px 15px var(--colorBoxShadowHeader);
     position: fixed;
+    top: 0;
+    left: 0;
 }
 
 /*Nav*/
@@ -90,9 +93,10 @@ header {
     position: absolute;
     top: 45px;
     right: 210px;
+    overflow: hidden;
     box-shadow: 0 12px 24px -6px #60606026;
     border-radius: 12px 0 12px 12px;
-    padding: 15px;
+    padding: 18px;
     flex-wrap: wrap;
     display: none;
 }
@@ -101,11 +105,12 @@ header {
     display: flex;
 }
 
+
 .cercosNav a {
     width: 100%;
     height: 60px;
     background-color: var(--colorHeader);
-    margin: 15px 0 0 0;
+    margin: 10px 0 0 0;
     box-shadow: none !important;
     padding: 0;
     flex-wrap: wrap;
@@ -123,7 +128,8 @@ header {
 }
 
 .cercosNav a:hover img {
-    transform: scale(1.25);
+    scale: 1.2;
+    rotate: 40deg;
 }
 
 /*Icons nav*/
@@ -229,11 +235,12 @@ header {
         margin: 2px 0 0 0;
         border-radius: 0 0 12px 12px;
         box-shadow: none;
-        padding: 13px;
+        padding: 15px;
     }
     
     .cercosNav a {
-        margin: 13px 0 0 0;
+        height: 50px;
+        margin: 10px 0 0 0;
     }
 
     .cercosNav a:first-child {
